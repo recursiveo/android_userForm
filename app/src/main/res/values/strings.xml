@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Week8</string>
+
+    <string-array name="departments">
+        <item>Technical</item>
+        <item>Engineering</item>
+        <item>Development</item>
+        <item>QA</item>
+        <item>Marketing</item>
+        <item>Testing</item>
+        <item>Design</item>
+
+    </string-array>
+</resources>
