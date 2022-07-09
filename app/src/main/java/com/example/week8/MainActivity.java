@@ -10,6 +10,7 @@ import android.view.View;
 import com.example.week8.databinding.ActivityMainBinding;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Calendar;
 import java.util.Locale;
@@ -25,6 +26,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //setContentView(R.layout.activity_main);
         binding = ActivityMainBinding.inflate(LayoutInflater.from(this));
         setContentView(binding.getRoot());
+
+
+        empList = new ArrayList<>();
 
 //        binding.btnAdd.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -56,6 +60,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void addEmployee() {
+        System.out.println("FFFFFFFFFFF");
         String name = binding.editTextName.getText().toString().trim();
         String salary = binding.salary.getText().toString().trim();
         String department = binding.dept.getText().toString();
